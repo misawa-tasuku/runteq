@@ -45,10 +45,10 @@ class TasksController < ApplicationController
     @task = current_user.tasks.find(params[:id])
   end
 
-  def task_logger
-    @task_logger ||= Logger.new('log/task.log', 'daily')
-  end
+  # def task_logger
+  #   @task_logger ||= Logger.new('log/task.log', 'daily')
+  # end
 
-  task_logger.debug 'taskのログを出力'
+  # task_logger.debug 'taskのログを出力'
 
 end
